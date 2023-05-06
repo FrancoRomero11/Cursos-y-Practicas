@@ -1,4 +1,3 @@
-
     ¿Que es programar?
 
 El programar es un set de intrucciones que uno le da a una maquina.
@@ -17,7 +16,8 @@ Ejemplo:
         10. Tomar la manilla.
         11. Empujar la puerta suavemente hasta que tope.
 
-<!-- A una maquina se le debe explicar en forma muy especifica/detallada lo que debe hacer -->
+<!-- A una maquina se le debe explicar en forma muy especifica/detallada lo que debe hacer. -->
+
 
     ¿Que puede hacer un computador?
 
@@ -28,15 +28,18 @@ Ejemplo:
 - Recordar informacion.
 - Recordar acciones.
 
+
     ¿Que se utiliza para indicar a un computador lo que debe hacer?
 
 Estas acciones se realizan mediante un lenguaje de programacion.
 
+
     ¿Que es un lenguaje de programacion?
 
-- Es un lenguaje formal.
+- Es un lenguaje formal. (Orientado a las computadoras)
 - Con reglas gramaticales definidas.
 - Nos permite entregarle instrucciones a una maquina.
+
 
     Dato e Informacion:
 
@@ -46,7 +49,6 @@ se representa a través de una secuencia de símbolos, números o letras.
 Como información denominamos al conjunto de datos, ya procesados y ordenados para su comprensión, que aportan nuevos conocimientos a un individuo o sistema.
 
 ejemplo1:
-
     Dato:
         36 
         chanchito
@@ -61,26 +63,30 @@ ejemplo1:
             chanchito feliz
 
 Ejemplo2:
-
     Dato:
         Salchicha
 
     Informacion:
-        perro salchicha 
+        perro salchicha
 
+
+<!-- Los lenguajes de programacion cuentan con Variables y Funciones. -->
+    
     Variable:
 
 Es un espacio o posicion de memoria que almacena un dato.
 
 ejemplo:
-
     edad = 10
     cantidad = 10
 
     x = "chanchito"
     animal = "chanchito"
     menu = "chanchito"
-    holmundo="chanchito feliz"
+    holamundo="chanchito feliz"
+
+    
+<!-- Cuando un Computador esta manejando datos, solo puede hacerlo con algunos en especifico. -->
 
     Tipos de datos:
 
@@ -90,15 +96,15 @@ harina = 0.5 -> Float (Numero Decimal)
 caracter = "a" -> Char (Solo un Caracter)
 casado = true -> Boolean (True or False)
 
+
     Funciones:
 
 Permite reutilizar algoritmos que hallamos construido. Son una forma de recordar el algoritmo que escribimos para no tener que repetirselo 
 constantemente a la maquina. (se escribe solo una vez y luego llamamos a la funcion)
+Las funciones, también llamados métodos, nos permiten dividir el trabajo que hace un programa, en tareas más pequeñas separadas de la parte principal.
 
 ejemplo:
-
-<!-- La palabra "function" siempre en ingles y luego el nombre de la funcion -->
-
+<!-- La palabra "function" siempre en ingles y luego el nombre de la funcion. -->
     function entrarALaCasa():
         1. Acercarse a la puerta.
         2. Levantar la mano.
@@ -112,15 +118,13 @@ ejemplo:
         10. Tomar la manilla.
         11. Empujar la puerta suavemente hasta que tope.
 
-generalmente se escriben con estos formatos:
+    generalmente se escriben con estos formatos:
+<!-- Con guion bajo o la primer letra de cada palabra en mayuscula. -->
+        1. entrar_a_la_casa()
+        2. entrarALaCasa()
 
-    1.entrar_a_la_casa()
-    2.entrarALaCasa()
-
-generalmente se llaman de esta forma:
-
-<!-- Escribimos el nombre de la funcion (indica que funcion queremos ejecutar) y luego colocamos parentesis (indica que queremos que esa funcion sea ejecutada)-->    
-    
+    generalmente se llaman de esta forma:
+<!-- Escribimos el nombre de la funcion (indica que funcion queremos ejecutar) y luego colocamos parentesis (indica que queremos que esa funcion sea ejecutada). --> 
     entrarALaCasa()
 
     Algoritmo: 
@@ -128,21 +132,18 @@ generalmente se llaman de esta forma:
 Set de instrucciones que redactamos para poder resolver un problema.
 
 ejemplo1:
-
     El problema anterior de "entrar a la casa".
 
 Ejemplo2:
-
     function entrarALaCasa():
         1. Acercarse a la puerta.
         2. Patear muy fuerte.
         3. Caminar hacia adelante.
 
 Este paso, si bien es mas corto. Hace mucho ruido, rompe la puerta, cualquier persona podria entrar a la casa despues de esto.
-Quizas para los policias que deban entrar a una casa de forma urgente, este algoritmo les resultara util.
+Quizas para los policias que deban entrar a una casa de forma urgente, este algoritmo les resulte mas util.
 
 ejemplo3:
-
     function entrarALaCasa():
         1. Correr en direccion a la ventana. 
         2. Saltar.
@@ -150,11 +151,15 @@ ejemplo3:
 
 Este paso pude ser el mas eficiente. Pero este hace mucho ruido, te puedes cortar y tu madre se enojara mucho si rompes la ventana.
 
+
     Paradigma:
 
-Es como una forma de ver la vida, una forma de como podemos resolver problemas. En este caso el paradigma de la programacion es como una filosofia en cuanto a como se debe resolver algo.
+Es como una forma de ver la vida, en este caso en como podemos resolver problemas. Debemos pensar en el paradigma de la programacion como una filosofia en cuanto a
+como se debe resolver algo.
 
 OBS: un paradigma en muchas ocasiones es sencillamente una preferencia en cuanto a como resolver algo y nada mas. (no indica que algo este bien o mal hecho).
+
+<!-- Existen muchos tipos de paradigmas, esta el funcional, imperativo, estructurado, pero el que mas se utiliza es el orintado a objetos. -->
 
     Orientacion a objetos:
 
@@ -164,24 +169,18 @@ de planos de código (clases) para crear instancias individuales de objetos.
 
     Clase:
 
-Una clase es una plantilla. Define de manera genérica cómo van a ser los objetos de un determinado tipo. 
-
-ejemplo: 
-
-    Una clase para representar a animales puede llamarse ‘animal’ y tener una serie de atributos, como ‘nombre’ o ‘edad’ (que normalmente son propiedades), y una serie
-    con los comportamientos que estos pueden tener, como caminar o comer, y que a su vez se implementan como métodos de la clase (funciones).
+Si lo queremos definir en una sola frase, una clase es un diseño que se puede utilizar para crear varios objetos individuales.
+Una clase define un grupo o conjunto de datos, en objetos se llaman atributos, que definen los objetos, así como un conjunto de comportamientos, las funciones o métodos 
+del objeto, que lo manipulan y relacionan los objetos unos de otros.
 
     Objeto:
 
 Un objeto es el resultado de la instanciación de una clase.
 
-ejemplo2:
+ejemplo:
+<!-- Las personas que queremos habrir la puerta. Tenemos un nombre, una edad, un color de cabello, ojos, vestimenta, etc. -->
 
-<!--     Las personas que queremos habrir la puerta. Tenemos un nombre, una edad, un color de cabello, ojos, vestimenta, etc.
-
-    Esto seria como el plano de una casa, pero en este caso para crear personas. -->
-    
-    <!-- Personas seria una Clase, como el plano de construccion de una casa-->
+<!-- Personas seria una Clase, como el plano de construccion de una casa-->
     class Personas {
         edad: Integer
         nombre: String
@@ -190,10 +189,7 @@ ejemplo2:
         habla {tu nombre}
     }
 
-    <!-- Ahora empezamos a crear personas, en base a este plano (Personas). Seria como una instancia de la clase persona.
-    Seria como la casa ya construida. -->
 <!-- personaChanchito es un Objeto, como la casa ya construida. Tambien podemos decir que personaChanchito es una instancia de la clase persona. -->
-    
     personaChanchito = new Personas(
         edad: 36
         nombre: "chanchito"
@@ -201,6 +197,7 @@ ejemplo2:
 
         )
 
+<!-- personaFelipe es otro Objeto, como una casa ya construida. Tambien podemos decir que personaFelipe es una instancia de la clase persona. -->
     personaFelipe = new Personas(
         edad: 15
         nombre: "felipe"
@@ -209,32 +206,49 @@ ejemplo2:
         )
 
     Metodo:
+Un método es una subrutina cuyo código es definido en una clase y puede pertenecer tanto a una clase, como es el caso de los métodos de clase o estáticos, 
+como a un objeto, como es el caso de los métodos de instancia.
 
-Es como una funcion pero ejecutada dentro del objeto.
+ejemplo:
+    decirNombre():
+    habla {tu nombre}
+
+    dentro de la clase Personas:
+        class Personas {
+            edad: Integer
+            nombre: String
+            colorCabello: String
+            decirNombre():
+            habla {tu nombre}
+        }
+<!-- Con esto evitamos duplicar codigo, cuando nosotros añadimos estas acciones dentro de la clase al momento de crear una instancia esta accion o este metodo se
+copia a cada una de las instancias de cada objeto. -->
+
 
     Condicion: 
 
 Control de flujo de una aplicacion. Dependiento el dato que estemos viendo se pueden tomar distintas desiciones y ejecutar distintas porciones de codigo/algoritmo.
 
 Ejemplo:
+<!-- Tomaremos la funcion anterior e indicaremos quien queremos que entre a la casa -->
 
-<!-- Toamremos la funcion anterior e indicaremos quien queremos que entre a la casa -->
-
-function entrarALaCasa(persona):
-    si persona.edad > 17:
-        correr hacia la ventana
-        saltar
-        hacerse bolita
-    si no:
-        vete de aqui 
-
+    function entrarALaCasa(persona):
+        si persona.edad > 17:
+            correr hacia la ventana
+            saltar
+            hacerse bolita
+        si no:
+            vete de aqui 
 <!-- "si" se conoce como: "if" y "si no" como: "else". -->
 
-    Errores: 
 
-function entrarALaCasa(persona):
-    acercarse a la puerta
-    caminar hacia adelante
+    Errores: 
+Ejemplo:
+<!-- vamos a crear una funcion que intencionalmente va a estar mal -->
+
+    function entrarALaCasa(persona):
+        acercarse a la puerta
+        caminar hacia adelante
 
 Si la puerta llega a estar cerrada la persona se pegara en la cara y no podra entrar por lo que deberia arrojarse un error.
 Pero por el contrario si la puerta estubiese abierta la funcion se ejecutaria sin ningun problema.
@@ -246,9 +260,9 @@ A eso le denominamos BUG.
 Son errores que uno puede introducir de manera involuntaria en el codigo.
     
 ejemplo:
-    
     Si la puerta esta cerrada arrojara error: 
         error ¡puerta cerrada!
 
 OBS: dependiendo el lenguaje de programacion que se este utilizando los mensajes de error van a variar y tambien de que es lo que se esta ejecutando.
-Por eso es importante aprender a leer los mensajes de error que te entrega el lenguaje de programacion con el que estas trabajando. Para asi poder intentar solucionar la logica que tu escribiste en tu codigo, en este caso tu algoritmo.
+Por eso es importante aprender a leer los mensajes de error que te entrega el lenguaje de programacion con el que estas trabajando. Para asi poder 
+intentar solucionar la logica que tu escribiste en tu codigo, en este caso tu algoritmo.
