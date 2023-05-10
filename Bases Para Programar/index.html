@@ -98,9 +98,11 @@ casado = true -> Boolean (Solo tiene 2 valores: "True" or "False")
 
     Funciones:
 
-Permite reutilizar algoritmos que hallamos construido. Son una forma de recordar el algoritmo que escribimos para no tener que repetirselo 
-constantemente a la maquina. (se escribe solo una vez y luego llamamos a la funcion)
-Las funciones, también llamados métodos, nos permiten dividir el trabajo que hace un programa, en tareas más pequeñas separadas de la parte principal.
+Una función es un bloque de código, nos permiten dividir el trabajo que hace un programa, en tareas más pequeñas separadas de la parte principal. Se puede 
+llamar y reutilizar varias veces. Se puede pasar información a una función y esta puede devolver información.
+
+Cuando se llama a una función, el programa pausará el programa actual y ejecutará la función. La función se leerá de arriba a abajo. Una vez que se completa
+la función, el programa continúa ejecutándose donde se había detenido. Si la función devolvió un valor, ese valor se usará donde se llamó a la función.
 
 ejemplo:
 <!-- La palabra "function" siempre en ingles y luego el nombre de la funcion. -->
@@ -161,7 +163,7 @@ como se debe resolver algo.
 
 OBS: un paradigma en muchas ocasiones es sencillamente una preferencia en cuanto a como resolver algo y nada mas. (no indica que algo este bien o mal hecho).
 
-<!-- Existen muchos tipos de paradigmas, esta el funcional, imperativo, estructurado, pero el que mas se utiliza es el orintado a objetos. -->
+<!-- Existen muchos tipos de paradigmas, esta el funcional, imperativo, estructurado, pero el que mas se utiliza es el orientado a objetos. -->
 
     Orientacion a objetos:
 
@@ -207,9 +209,13 @@ ejemplo:
 
         )
 
+
     Metodo:
 Un método es una subrutina cuyo código es definido en una clase y puede pertenecer tanto a una clase, como es el caso de los métodos de clase o estáticos, 
 como a un objeto, como es el caso de los métodos de instancia.
+
+OBS: Una subrutina en la programación de computadoras es una parte más pequeña de un módulo de código más grande que tiene sus propias operaciones internas diseñadas 
+para servir al programa en general. Una subrutina a veces se denomina función o método porque devuelve un resultado de código específico que utiliza el programa.
 
 ejemplo:
     decirNombre():
@@ -254,6 +260,7 @@ Ejemplo:
 
 Si la puerta llega a estar cerrada la persona se pegara en la cara y no podra entrar por lo que deberia arrojarse un error.
 Pero por el contrario si la puerta estubiese abierta la funcion se ejecutaria sin ningun problema.
+
 Por lo que en algunos casos nuestro codigo funcionaria y en otros casos no.
 A eso le denominamos BUG.
 
@@ -265,6 +272,13 @@ ejemplo:
     Si la puerta esta cerrada arrojara error: 
         error ¡puerta cerrada!
 
-OBS: dependiendo el lenguaje de programacion que se este utilizando los mensajes de error van a variar y tambien de que es lo que se esta ejecutando.
-Por eso es importante aprender a leer los mensajes de error que te entrega el lenguaje de programacion con el que estas trabajando. Para asi poder 
+OBS: dependiendo el lenguaje de programacion que se este utilizando los mensajes de error van a variar y tambien en funcion de que es lo que se esta ejecutando.
+Por eso es importante aprender a leer los mensajes de error, que te entrega el lenguaje de programacion con el que estas trabajando. Para asi poder 
 intentar solucionar la logica que tu escribiste en tu codigo, en este caso tu algoritmo.
+
+
+Extra:
+
+Diferencia entre Clase y Funcion:
+
+La diferencia esta en que a la clase le podemos añadir atributos y algoritmos (las mismas funciones), mientras que la funcion solo es un algoritmo y nada mas. 
