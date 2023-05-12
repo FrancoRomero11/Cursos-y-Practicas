@@ -1,0 +1,187 @@
+<!--
+    ¿Que significa HTML?
+HyperText Markup Language (lenguaje de marcado de hipertexto)
+    
+    ¿Para que se usa?
+Es el lenguaje con el que estructuramos las paginas webs.
+
+ejemplo:
+Lo que hacemos con html es agarrar y colocar objetos. Es algo parecido a agarrar cajas y colocarlas donde mas nos guste. 
+
+    ¿Por que es importante guardar un archivo como "index.html"?
+Por que los servidores tienen configurado, que cuando habramos una pagina la que agarre sea el index y el html porque basicamente es el formato del archivo.
+
+
+ETRUCTURA INICIAL DE HTML
+
+
+    Etiquetas:
+El concepto de etiqueta vendria a ser como algo parecido a una caja.
+
+    Sintaxis:
+"<" indica que abrimos una etiqueta
+"<etiqueta>" indica que abrimos un objeto (empezamos a crear un objeto/caja)
+"<etiqueta></etiqueta>" con esto ya tenemos un objeto creado. (con esto terminamos de crear el objeto/caja)
+
+Esta etiqueta a su vez tiene atributos "<etiqueta atributo></etiqueta>", este atributo son las propiedades, ¿que son propiedades? las caracteristicas que tiene 
+un objeto. Por ejemplo: el color.
+Los atributos tienen un valor y este valor se coloca entre comillas "<etiqueta atributo="valor"></etiqueta>"
+
+    ejemplo: 
+La etiqueta boton, este boton tiene propiedades "color" y ese color tiene un valor "rojo"
+
+<boton color="rojo" tamaño="grande" borde="negros"></boton>
+
+En resumen es agarrar un objeto y crearle un boton, que puede tener un color="verde", tamaño="grande", bordes="negros".
+
+
+    Tipos de Etiqueta:
+Existen un monton de tipos de etiquetas, pero antes de empezar debemos conocer 2 clasificaciones de las mismas.
+
+El 1er tipo son las que se cierran solas o no hacen falta cerrarlas. 
+ejemplo:
+<br>
+
+El 2do tipo que se habren y se cierran.
+ejemplo:
+<h1></h1>
+
+
+    Estructura:
+
+<!DOCTYPE html>
+"esta etiqueta define la ultima version de html"
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+"en esta etiqueta colocamos todo lo que no podemos ver (configuraciones, enlaces al estilo, etc)"
+<body>
+    
+</body>
+"en esta etiqueta colocamos todo lo que podemos ver (los botones, las cajas, las figuras, las secciones)"
+</html>
+"en esta etiqueta tenemos toda la pagina"
+
+OBS: estos archivos html se abren con un navegador, debido a que html es un lenguaje que el navegador interpreta-procesa toda la informacion y nos lo muestra
+en pantalla. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera pagina web</title>
+<!-- esta etiqueta sirve para colocar el titulo a nuestra pagina (se ve arriba en la pestaña) -->
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+    <h2>Hola Mundo</h2>
+    <h3>Hola Mundo</h3>
+    <h4>Hola Mundo</h4>
+    <h5>Hola Mundo</h5>
+    <h6>Hola Mundo</h6>
+<!-- esta etiqueta sirve para colocar los titulos en general (esto ya se muestra en la pagina) -->
+
+<p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero delectus necessitatibus tempore sapiente nostrum
+    neque nobis ad! Eveniet accusamus molestias sunt, error est deserunt eum veniam velit tempora aspernatur autem!
+</p>
+<!-- esta etiqueta escribe un parrafo -->
+
+<b>negrita</b><br>
+<i>italica</i><br>
+<small>chiquita</small><br>
+<!-- estas son etiquetas de texto -->
+<br>
+
+<!-- Enlaces: -->
+
+<a href=""></a>
+<!-- la etiqueta "<a></a>" sirve para redirigirnos a otra pagina y el atributo "<a href=""></a>" sirve para indicarle el enlace a donde tiene que ir cuando 
+presionemos en el mismo -->
+
+<!-- Teoria Enlaces: 
+Hay dos tipos de rutas: las locales (que estan en nuestras carpetas) y las externas (las que no tenemos de manera local).
+En una utilizamos un protocolo: http/https, mientras que en otra accedemos refiriendonos localmente al recurso. -->
+ejemplo1:
+<a href="https://facebook.com">Click Aqui</a><br>
+ejemplo2:
+<a href="pagina2.html">Click aqui</a><br>
+
+<!-- ¿Como acceder a otra pagina si la tenemos dentro de una carpeta? -->
+ejemplo3:
+<a href="cosas/pagina3.html">Cosas</a><br>
+<!-- antes de la barra le indicamos que entre a una carpeta y despues de la misma, que entre al archivo que queremos acceder.
+
+OBS: por logica si hay mas de una carpeta, utilizamos las barras necesarias, hasta que podamos acceder al archivo deseado.-->
+
+<!-- Extra de enlaces: 
+Los enlaces tambien pueden abrirnos en otra pestaña, ventana y demas.-->
+ejemplo4:
+Haz <a href="https://google.com" target="_blank">Click aqui</a> para ir a google.
+<!-- el atributo "target" con el valor de "_blank" lo que hace es abrir el enlace en una pestaña aparte -->
+
+
+<!-- Breve prueba de repaso de lo que aprendimos hasta este momento. -->
+<h1>Mi pagina web</h1>
+<h2>Subtitulo de mi pagina web</h2>
+<p>
+    Todo tendencias, es un canal de <b>youtube</b> que busca cambiar la mentalidad de las <b> nuevas generaciones </b> despertando una <b> pasion </b>
+    por el desarrollo, la tecnologia y la programacion a traves de las metodologias de enseñanza, mostrando que el desarrollo
+    tiene un mundo magnifico. Haz <a href="https://www.youtube.com/@soydalto">Click aqui</a> para mas informacion.
+</p>
+
+
+<br>
+<!-- esta etiqueta lo que hace es completar la linea y tirar lo que venga despues abajo. -->
+
+</body>
+</html>
+
+
+<!-- DATOS TEORICOS EXTRA:
+
+    Concepto html:
+El comprender html es algo sencillo, vendria a ser como una caja "<html></html>", que contiene otra/s caja/s "<head></head>"-"<body></body>", que a su vez 
+contiene muchas mas cajas.
+Esto sirve para que luego con CSS les podamos dar color, tamaños, bordes, sombra, posiciones, etc.
+Por lo que con html no nos tiene que quedar algo lindo, simplemente tiene que quedar estructurado. 
+
+
+    ¿Que es la semantica en html?
+La semántica en el HTML y HTML5 se refiere al significado o información extra que otorgan los elementos o etiquetas del lenguaje, información que define o
+describe el contenido, función o sección que contienen.
+Esta información es lo que permite que un documento se pueda rastrear de mejor manera. Ayuda a que el contenido se muestre de manera consistente en diferentes
+aplicaciones y contextos, además de ser fundamental para otorgar accesibilidad y funcionalidad con tecnología de asistencia como lectores de contenido.
+
+    Concepto de html Semantico:
+Html no es un lenguaje de programacion pero tarde o temprano sigue siendo un lenguaje. Esto significa que tiene una estructura, existen formas correctas e incorrectas
+de hablar este lenguaje.
+En html seria a nivel semantico, por ejemplo colocando mas de un "<h1></h1>". Esto estaria mal debido a que el "<h1></h1>" se posiciona en google. 
+¿Que significa esto? pues tiene que ver con el SEO o posicionamiento web. Por lo que cada vez que trabajemos con SEO es intentar colocar todas las cosas/cajas de forma
+correcta. (colocar una etiqueta la cantidad de veces que deba estar, donde tiene que estar, en el lugar que deba estar, la forma en la que tiene que estar, etc)
+
+    Definicion de SEO:
+El posicionamiento SEO (por sus siglas en inglés Search Engine Optimization) son un conjunto de técnicas que se aplican en una página web con el objetivo de mejorar
+su posición y su visibilidad en los motores de búsqueda de los principales navegadores.
+
+
+    Mas teoria de etiquetas:
+
+    Exiten distintos tipos de etiqueta:
+
+    Las que completan la linea:
+ esto sucede por que al cerrar la etiqueta, le estamos indicando al navegador que complete el resto de la linea y todo lo que venga despues
+lo tire por debajo. (al hablar de linea hacemos referencia a lo que se completa teniendo en cuenta la caja que contiene a nuesta etiqueta "<h1></h1>")
+ej:"<h1></h1>" 
+
+    Las que se adaptan al contenido:
+En base al contenido que tengas se puede hacer mas grnade o mas chica.
+ej:"<b></b>".
+
+OBS:para ver esto presionamos "F12" en el teclado -->
