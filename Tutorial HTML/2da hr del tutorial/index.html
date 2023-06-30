@@ -4,9 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Metadatos:
+
+El concepto de metadatos se refiere a aquellos datos que hablan de los datos, es decir, describen el contenido de los archivos o la información de los mismos. 
+Los metadatos describen recursos por ejemplo un video, este video puede llegar a considerarse un objeto, que a su vez viene acompañado de un titulo, una
+descripcion, etiquetas. 
+Todo esto forma parte de lo que un metadato puede llegar a describir, el metadato toma informacion del video, por ejemplo una imagen, en la imagen hay un 
+texto, por lo que hay una inteligencia artificial que reconoce ese texto y lo agrega a los metadatos, entonces los metadatos no pueden reconocer que en esa 
+imagen hay texto, por lo que la agrega a los metadatos; en el titulo hay texto, pues lo agrega al metadato; en la descripcion hay texto, lo agrega a los metadatos. 
+
+En html para trabajar con metadatos se utiliza la etiqueta "<meta>" (se coloca en el "<head>"). -->
+
+<meta>
+<!-- la etiqueta "<meta>" no se puede ver en la pagina, pero puede realizar cambios de SEO o de codificacion (si es algo de codificacion podra verse en la pagina).
+
+Por ejemplo, los acentos: -->
+<meta charset="utf-8">
+<!-- al principio los acentos no se ven correctamente, el navegador remplaza los acentos con otros caracteres, para corregir esto se utiliza 
+la etiqueta "<meta>", junto al atributo "<meta charset="utf-8">" ("charset" significa conjunto de caracteres y "utf-8" que es la codificacion universal, la cual 
+hace que la pagina acepte los acentos, señas y un monton de otros caracteres que normalmente no existen en la codificacion que viene por defecto ) que nos permite 
+codificar la pagina permitiendo que se vean los acentos, por ejemplo.
+
+    Tipo de meta: -->
+<meta name="" content="">
+<!-- el atributo "<meta name="">" indica el tipo de meta y el "<meta content="">" el contenido.-->
+<meta >
+<!--  -->
+<meta >
+<!--  -->
+<meta >
+<!--  -->
+<meta >
+<!--  -->
+<meta >
+<!--  -->
+
     <title>Document</title>
 </head>
 <body>
-    <!-- Listas -->
+<!-- Listas:
+
+    Tenemos 2 tipos de listas: -->
+
+    <h2>Lista de compra para el super</h2>
+<!-- Las desordenadas: -->
+<ul>
+    <li>Leche</li>
+    <li>Harina</li>
+    <li>Huevo</li>
+    <li>Auto 0KM</li>
+</ul>
+<!-- Los "<ul></ul>" son como la hoja que contiene a la lista y los "<li></li>" son los elementos de la lista. En este caso nos la muestra punto por punto,
+de manera desordenada.
+
+    Las ordenadas: -->
+<ol>
+    <li>Leche</li>
+    <li>Harina</li>
+    <li>Huevo</li>
+    <li>Auto 0KM</li>
+</ol>
+<!-- Los "<ol></ol>" son como la hoja que contiene a la lista y los "<li></li>" son los elementos de la lista. En este caso nos la muestra numericamente,
+de manera ordenada. 
+
+
+    Multimedia: -->
+
+<h2>Mi primer imagen en HTML:</h2>
+
+<img src="" >
+<!-- La etiqueta "<img>" sirve para mostrar una imagen en pantalla, junto al atritubo "<img src="">" que nos sirve para llamar un archivo que puede estar de forma
+externa o interna.
+    
+    Forma externa: -->
+<h3>imagen1:</h3> 
+<img src="https://images3.memedroid.com/images/UPLOADED436/5df150726bd4c.jpeg" width="300" height="300">
+<!-- Para sacar la ruta, debemos buscar una imamgen en google, inspeccionar y copiamos el link.
+
+    Forma interna: -->
+<h3>imagen2:</h3>
+<img src="messichiquito.jpeg" width="300" height="300">
+<!-- Para sacar la ruta, debemos guardar una imagen en nuestra carpeta, buscamos la imagen (el link de la misma) y listo.
+
+OBS: si nuestra imagen esta dentro de una carpeta usamos las barras, si esta detras, usamos los ".." y barras necesarias hasta llegar a la imagen.
+
+    Extra:
+los atributos "<img width="">" y "<img height="">", configuran el ancho y el largo de una imagen (no es recomendable editar de esta forma,
+porque luego con CSS no nos deja modificarlo). -->
+
+<h2>Mi primer video en HTML:</h2>
+<video src="matesito.mp4" width="300" height="300" controls></video> 
+<!-- esta etiqueta "<video></video>" sirve para poder colocar un video, junto al atributo "<video src=""></video>" que nos permite llamar un
+archivo, que puede estar de forma externa o interna y el atributo "<video controls></video>" que nos da acceso a los distintos 
+botones con los que podemos reproducir el video. -->
+
+<h2>Mi primer audio en HTML:</h2>
+<audio src="Warriors (ft. Imagine Dragons) (MP3_128K).mp3" controls></audio> 
+<!-- esta etiqueta "<audio></audio>" nos permite colocar un audio, juanto al atributo "<audio src=""></audio>" que nos permite llamar un
+archivo, que puede estar de forma externa o interna y el atributo "<audio controls></audio>" que nos da acceso a los distintos 
+botones con los que podemos reproducir el audio.-->
+
+
+<!-- Divs: -->
+
+<div>
+    <h4>nombre del producto</h4>
+    <p>precio<b>$99</b></p>
+</div>
+<!-- Nos permite separar y dividir contenido. Indica que estamos agrupando algo. 
+
+OBS: nos va a servir demasiado cuando utilizemos CSS. -->
+
+
+<!-- Formularios: -->
+
+<form action="">
+    <input type="">
+</form>
+<!-- la etiqueta "<form action=""></form>" nos permite crear formularios, tiene 3 formas de separar todo, una es con el "<input type="">" que es
+la entrada de datos, otra que es el procesamiento y otra que es la salida. 
+El input es algo que nos da el usuario, por ejemplo cuando le pedimos que inserte un texto (eso seria con el input, una entrada de datos), luego el sistema
+procesa ese texto y despues nos devuelve una respuesta. 
+Entonces la entrada de datos puede ser un texto que nos da el usuario, nuestro sistema lo va a procesar y por ejemplo le va a responder: "¡No, tu contraseña
+es incorrecta!" y esa va a ser la salida de datos. 
+
+¿Que tipo de datos les podemos solicitar al usuario? -->
+
+<form action="">
+    <input type="text"><br>
+<!-- este input pide datos de tipo text, que viene a ser un texto. -->
+    <input type="password"><br>
+<!-- este input pide datos de tipo password, que viene a ser una contraseña. -->
+    <input type="number"><br>
+<!-- este input pide datos de tipo number, que vienen a ser numeros. -->
+    <input type="email"><br>
+<!-- este input pide datos de tipo email. -->
+    <input type="color"><br>
+<!-- este input pide datos de tipo color. -->
+    <input type="range" min="0" max="5"><br>
+<!-- este input pide datos de tipo range, que junto a los atributos "<input min="0" max="5">, nos permite seleccionar un rango de numeros. -->
+    <input type="date"><br>
+<!-- este input pide datos de tipo date, que viene a ser una fecha. -->
+    <input type="time"><br>
+<!-- este input pide datos de tipo time, que viene a ser una hora. -->
+    <input type="button" value="Boton"><br>
+<!-- este input pide datos de tipo button, que junto al atributo "<input value="">", que es siempre lo que nos va a devolver el input, nos permite crear un
+boton y a su vez darle un nombre al mismo. -->
+    <input type="submit">
+<!-- este input pide datos de tipo submit, que es un boton que nos permite enviar datos (es lo mismo que el button, pero viene con un value prederminado,
+que dependiendo el pais donde te encuentres, colocara el boton de "enviar" en ese respectivo idioma). -->
+</form>
+
+<!-- Extra: --> 
+<form method="post">
+<!-- OBS: cuando trabajemos con un lenguaje de backend se utilizan metodos unos de encriptacion y otro que es el post (que envia los datos al servidor) -->
+
+    <input name=""><br>
+<!-- el atributo "<input name="">" se usa para poder identificar al input, asignandole un nombre y asi el servidor puede interactuar con el input. -->
+
+    <input required><br>
+<!-- el atributo "<input required>" nos indica que debemos completar obligatoriamente el campo donde este el atributo para poder enviar el formulario.
+
+OBS: igualmente este tipo de  cosas se realizan del lado del servidor, porque tranquilamente si alguien no quiere completar una parte del formulario, puede apretar
+F12, borrar el required y enviarnos el formulario tranquilamente. -->
+
+    <textarea readonly ></textarea><br>
+<!-- la etiqueta "<textarea></textarea>" es un campo de texto al cual podemos darle el tamaño que queramos y puede funcionar tranquilamente como un "<input type="">".
+El atributo "<textarea readonly ></textarea>" sirve para indicar que solo podemos leer lo que este escrito dentro, pero no podamos escribir nada adentro. -->
+
+    <input value="">
+<!-- el atributo "<input value="">" se utiliza para definir el valor inicial de un elemento de entrada y para especificar el valor que se enviará al servidor cuando 
+se envíe un formulario. -->
+</form>
+
 </body>
 </html>
